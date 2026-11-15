@@ -40,14 +40,7 @@ namespace WebApplication1.Controller
             db.Passengers.Update(c2);
             db.SaveChanges();
         }
-       [HttpPut("deletePassengers1114")]
-        public void DelPassengers1(int id)
-        {
-            Passengers c2 = db.Passengers.FirstOrDefault(x => x.PassengerCode == id);
-            c2.Status = false;
-            db.Passengers.Update(c2);
-            db.SaveChanges();
-        }
+       
 
 
     }
